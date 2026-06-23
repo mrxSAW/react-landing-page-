@@ -18,7 +18,7 @@ function Hero() {
     
              <div className="hero-image">
                   <img
-                    src="https://images.unsplash.com/photo-1552664730-d307ca884978"
+                    src="https://www.bizanalysis.org/wp-content/uploads/2023/03/digital_transformation_1024X684.png"
                     alt="Digital Solution"
                         />
               </div>

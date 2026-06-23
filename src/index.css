@@ -42,6 +42,16 @@ nav a {
   cursor: pointer;
 }
 
+
+.btnMode {
+  background: #23b85c;
+  color: rgb(84, 243, 176);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
 .hero {
   display:flex;
   align-items: center;
@@ -258,8 +268,22 @@ nav a {
   font-size: 16px;
 }
 
+.form-message {
+  margin-top: 5px;
+  color: #f71f07;
+}
 
 
+
+
+
+.btn:hover,
+.hero-btn:hover,
+.contact-form button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
 
 
 
@@ -270,6 +294,10 @@ nav a {
   background: #030712;
   color: aqua;
   text-align: center;
+}
+
+.footer{
+  overflow: hidden;
 }
 
 .footer-logo {
@@ -283,11 +311,13 @@ nav a {
   justify-content: center;
   gap: 25px;
   margin-bottom: 15px;
+  flex-wrap: wrap;
 }
 
 .footer-links a {
   color: #32d244;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .footer p {
@@ -304,5 +334,160 @@ nav a {
 
 
 
+.dark {
+  background-color: #111827;
+  color: white;
+}
+
+.dark .about {
+  background-color: #1f2937;
+}
+
+.dark .feature-card,
+.dark .testimonial-card {
+  background-color: #374151;
+  color: white;
+}
+
+.dark .hero-content h1,
+.dark .features h2,
+.dark .about h2,
+.dark .testimonials h2  ,
+.dark .testimonial-card p ,
+.dark .about .about-content p ,
+.dark .feature-card p 
+{
+  color: white;
+}
+
+.dark .hero-content p {
+  color: #5892e8;
+}
 
 
+
+
+
+
+
+
+
+
+
+.back-to-top {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.menu-phone {
+  display: none;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .header {
+    padding: 20px 5%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .nav.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    left: 5%;
+    right: 5%;
+    background: #111827;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 15px;
+    z-index: 1000;
+  }
+
+
+
+  
+  .menu-phone {
+  display: block;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+  .hero {
+    flex-direction: column;
+    padding: 50px 5%;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+
+  .features-container,
+  .testimonials-container {
+    flex-direction: column;
+  }
+
+
+
+
+
+
+  
+ .footer-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-logo {
+    font-size: 22px;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+
+
+
+
+}
